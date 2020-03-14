@@ -5,6 +5,17 @@ import java.io.Serializable;
 /** Profile */
 public class Profile implements Serializable {
 
+
+
+  //Members
+  private String firstName;
+  private String lastName;
+  private String email;
+  private String phone;
+  private String about;
+
+  //Methods
+
   public String getFirstName() {
     return firstName;
   }
@@ -21,14 +32,6 @@ public class Profile implements Serializable {
     this.lastName = lastName;
   }
 
-  //Members
-  private String firstName;
-  private String lastName;
-  private String email;
-  private String phone;
-  private String about;
-
-  //Methods
   public String getName() {
     return firstName+ " " + lastName;
   }
