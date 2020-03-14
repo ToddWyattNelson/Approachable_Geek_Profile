@@ -38,12 +38,13 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Profile profile = getProfileCommand.execute();
 
-        if (profile.getFirstName()==null && profile.getLastName() == null){
+        if (profile.getFirstName()== null && profile.getLastName() == null ){
             name.setText(null);
         } else {
             String fullName = profile.getFirstName() +" "+profile.getLastName();
             name.setText(fullName);
         }
+
         email.setText(profile.getEmail());
         phone.setText((profile.getPhone()));
         about.setText(profile.getAbout());
